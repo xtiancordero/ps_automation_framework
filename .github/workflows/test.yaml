@@ -2,7 +2,7 @@ name: Selenium Tests
 
 on:
   schedule:
-    - cron: '30 9 9 2 *'    # runs at 9:00 AM UTC daily
+    - cron: '45 1 9 2 *'    # runs at 9:00 AM UTC daily
   push:
     branches: [main]
   pull_request:
