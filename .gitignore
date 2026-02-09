@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+chromedriver/
+reports/*.png
+reports/test.log
+.pytest_cache/

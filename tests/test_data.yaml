@@ -1,0 +1,17 @@
+
+login:
+  standard_user:
+    username: "standard_user"
+    password: "secret_sauce"
+  locked_out_user:
+    username: "locked_out_user"
+    password: "secret_sauce"
+
+checkout_information:
+  first_name: "Christian"
+  last_name: "Cordero"
+  postal_code: "1750"
+
+expected:
+  order_confirmation: "Thank you for your order!"
+  locked_out_error: "Epic sadface: Sorry, this user has been locked out."

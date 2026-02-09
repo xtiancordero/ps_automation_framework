@@ -1,0 +1,23 @@
+Test 1: Login → Add to Cart → Checkout → Complete Order
+Login with standard_user / secret_sauce
+Click "Add to cart" on a product
+Click the cart icon
+Click "Checkout"
+Fill in first name, last name, zip code
+Click "Continue"
+Click "Finish"
+Assert: "Thank you for your order!" message is displayed
+
+Test 2: Login → Add Multiple Items → Remove One → Verify Cart
+Login with standard_user / secret_sauce
+Add 2 products to the cart
+Go to the cart
+Remove one product
+Assert: Only 1 item remains in the cart
+Assert: The correct product is still in the cart
+
+Test 3: Invalid Login → Locked Out User
+Enter locked_out_user / secret_sauce
+Click login
+Assert: Error message "Sorry, this user has been locked out" is displayed
+Assert: URL still contains saucedemo.com (didn't navigate away)
